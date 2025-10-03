@@ -102,7 +102,13 @@ namespace Lab2
             int answer = 0;
 
             // code here
-
+            int sum = 0;
+            for (; sum < n;)
+            {
+                answer++;
+                sum += answer;
+            }
+            return answer;
             // end
 
             return answer;
@@ -113,7 +119,12 @@ namespace Lab2
             const double R = 6371.0; // радиус Земли, км
 
             // code here
-
+            int t = 0;
+            while((v * t + R) * (v * t + R) <= L * L + R*R)
+            {
+                t++;
+            }
+            answer = t;
             // end
 
             return answer;
